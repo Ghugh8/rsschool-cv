@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRAVEL</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,13 +21,21 @@
         <div>
             <h1 class="name">Travel Portal</h1>
         </div>
-        <div class="navigation">
-            <nav>
+        <div>
+            <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="section_item" id="HIW"><a rel="">How It Works</a></li>
-                    <li class="section_item" id="PYT"><a rel="">Plan Your Trip</a></li>
-                    <li class="section_item" id="DEST"><a rel="">Destinations</a></li>
-                    <li class="section_item" id="TRS"><a rel="">Travel Stories</a></li>
+                    <li class="section_item" id="HIW">
+                        <a href="#preview1">How It Works</a>
+                    </li>
+                    <li class="section_item" id="PYT">
+                        <a href="#three_steps">Plan Your Trip</a>
+                    </li>
+                    <li class="section_item" id="DEST">
+                        <a href="#destinations-link">Destinations</a>
+                    </li>
+                    <li class="section_item" id="TRS">
+                        <a href="#travel-stories">Travel Stories</a>
+                    </li>
                 </ul>    
             </nav>
         </div>
@@ -35,16 +44,16 @@
     <main class="main">
         <div>
             <section>
-                <h1 id="preview1">Explore the beauty of the World
+                <h2 id="preview1">Explore the beauty of the World
                     <div id="preview2">Receive personalized recommendations for countries, hotels, activities and more</div>
                     <div id="preview-search">
                         <div id="search-text">What would you like to do?</div>
                         <div id="start-planning">Start Planning</div>
                     </div>
-                </h1>
+                </h2>
             </section>
             <section class="steps">
-                <h2 class="threesteps">3 STEPS TO THE PERFECT TRIP</h2>
+                <h2 class="threesteps" id="three_steps">3 STEPS TO THE PERFECT TRIP</h2>
                 <div class="steps_icons">
                     <div class="bike">
                         <div class="block">
@@ -67,7 +76,7 @@
                 </div>
             </section>
             <section class="destinations">
-                <h2 class="popular">POPULAR DESTINATIONS</h2>
+                <h2 class="popular" id="destinations-link">POPULAR DESTINATIONS</h2>
                 <div class="destination-pic">
                     <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
                     <img src="./assets/img/japan.jpg" alt="japan" class="pictures">
@@ -86,7 +95,7 @@
                 </div>
             </section>
             <section class="stories">
-                <h2 class="stories-text">TRAVEL STORIES</h2>
+                <h2 class="stories-text" id="travel-stories">TRAVEL STORIES</h2>
                 <div class="stories-block">
                     <div>
                         <img src="./assets/img/thai.jpg" alt="thai" class="stories-photo">

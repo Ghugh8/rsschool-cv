@@ -20,6 +20,7 @@
     z-index: 1;
     background-color: #F2785CB2;
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    text-decoration: none;
 }
 
 .main { 
@@ -27,10 +28,6 @@
     justify-content: center;
     width: 1440px;
     min-height: 100%;
-    background-image: url(./assets/img/winter2.jpg);
-    background-repeat: no-repeat;
-    background-position: center bottom -50px;
-    background-size: 1440px 1331px;
 }
 
 .footer {
@@ -75,20 +72,23 @@
 .navigation {
     width: 527px;
     height: 21px;
-    
 }
 
 .navigation-list {
     position: absolute;
     display: flex;
     flex-direction: row;
+    list-style-type: none;
+    margin: 2.5% 0% 0% 32%;
+}
+
+a {
+    text-decoration: none;
     color: #FFFFFF;
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-size: 16px;
     font-weight: 500;
-    list-style-type: none;
-    margin: 2.5% 0% 0% 32%;
 }
 
 .login {
@@ -107,6 +107,7 @@
     font-size: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     text-align: center;
+    cursor: pointer;
 }
 
 .steps {
@@ -206,6 +207,7 @@
     justify-content: center;
     align-items: center;
     max-width: 1440px;
+    overflow: hidden;
 }
 
 .popular {
@@ -272,6 +274,7 @@
     font-weight: 500;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     text-align: center;
+    cursor: pointer;
 }
 
 .arrow {
@@ -368,6 +371,7 @@
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     text-align: center;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .footer-text {
@@ -413,6 +417,7 @@
 
 #PYT {
     margin: 0px 42px;
+    
 }
 
 #TRS {
@@ -432,6 +437,7 @@
     top: 32px;
     left: 120px;
     margin: 0px;
+    text-shadow: 2px 1px 10px rgb(0 0 0 / 30%);
 }
 
 #preview2 {
@@ -486,6 +492,8 @@
     line-height: 32px;
     text-align: center;
     margin: 18px 18px 18px 75px;
+    cursor: pointer;
+    transition: all 0.25;
 }
 
 
