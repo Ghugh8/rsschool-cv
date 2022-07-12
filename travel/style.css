@@ -1,85 +1,69 @@
 .html {
     scroll-behavior: smooth;
-    background: url(./assets/img/winter.jpg) no-repeat bottom center;
-    background-size: 1440px auto;
+    background: url() no-repeat bottom center;
+    background-size: 390px 693px;
+    background-position: center bottom;    
 }
 
 .body {
-    max-width: 1440px;
-    min-height: 100%;
+    background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(./assets/img/lake_2.jpg);
+    max-width: 390px;
+    min-width: 320px;
     margin: auto;
     background-repeat: no-repeat;
     background-position: center top;
-    background-image: url(./assets/img/lake.jpg);
+    background-size: 390px 251px;
+    border-radius: 30px 30px 0px 0px;
 }
 
 .header {
-    position: relative;
-    width: 1440px;
-    height: 90px;
-    z-index: 1;
-    background-color: #F2785CB2;
-    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-    text-decoration: none;
-}
-
-.main { 
-    display: flex;
-    justify-content: center;
-    width: 1440px;
-    min-height: 100%;
-}
-
-.footer {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 729px;
-    height: 34px;
-    bottom: 0px;
-    left: 590px;
-    margin: 14px 0px;
+    width: 390px;
+    height: 32px;
 }
 
 .vector {
-    position: absolute;
     width: 30px;
     height: 30px;
-    left: 8.3%;
-    top: 29%;
 }
 
-.bcgrd {
-    position: absolute;
-    top: -90px;
-    width: 1440px;
-    
+.menu-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
-.name {
-    position: absolute;
-    width: 184px;
-    height: 32px;
-    color: #FFFFFF;
-    font-family: 'Magra', sans-serif;
-    font-style: normal;
-    font-size: 30px;
-    margin: 1.8% 0% 0% 10.8%;
+.menu-img {
+    width: 32px;
+    height: 35px;
 }
 
-.navigation {
-    width: 527px;
-    height: 21px;
-}
-
-.navigation-list {
-    position: absolute;
+.header-div {
     display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 2.5% 0% 0% 32%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 358px;
+    height: 32px;
+    top: 43px;
+    left: 16px;
+}
+
+.stories-footer {
+    background: url(./assets/img/winter.jpg) no-repeat bottom center;
+    background-size: 390px 693px;
+    background-position: center bottom; 
+    border-radius: 30px;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 360px;
+    height: 48px;
+    top: 110px;
+    margin: auto;
 }
 
 a {
@@ -89,106 +73,80 @@ a {
     font-style: normal;
     font-size: 16px;
     font-weight: 500;
-}
-
-.login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0.5% 84.5%;
-    width: 103px;
-    height: 41px;
-    background-color: #0D606F;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-family: 'Red Hat Display', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    text-align: center;
-    cursor: pointer;
+    line-height: 21px;
 }
 
 .steps {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 247px;
+    width: 360px;
+    height: 153px;
     text-align: center;
-    margin: 300px 0px 0px 0px;
+    margin: 190px auto 0px;
 }
 
 .threesteps {
-    width: 611px;
-    height: 53px;
+    width: 214px;
+    height: 19px;
     color: #F2785C;
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
-    font-size: 40px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 53px;
+    line-height: 19px;
     text-align: center; 
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 21px 0px;
+    letter-spacing: 0.2px;
 }
 
 .steps_icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 1177px;
-    height: 154px;
+    justify-content: space-between;
+    width: 360px;
+    height: 70px;
     color: #0D606F;
     font-family: 'Aleo', serif;
     font-style: normal;
-    font-size: 19px;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 12px;
 }
 
-.bike {
+.steps-text {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 247px;
-    height: 154px;
-    margin: 0px 231px 0px 0px;
+    flex-direction: row;
+    width: 360px;
+    height: 24px;
+    color: #0D606F;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-top: 19px;
 }
 
-.calendar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 222px;
-    height: 154px;
+.steps-text1 {
+    width: 94px;
+    height: 24px;
+    text-align: left;
+    margin-right: 31px;
 }
 
-.plane {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 317px;
-    height: 154px;
-    margin: 0px 0px 0px 160px;
+.steps-text2 {
+    width: 111px;
+    height: 24px;
+    text-align: center;
 }
 
-.block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    background-color: #F2785C;
-    border-radius: 16px;
-    margin: 0px 0px 30px 0px;
-}
-
-.icon-png {
-    color: #FFFFFF;
+.steps-text3 {
+    width: 98px;
+    height: 24px;
+    text-align: right;
+    margin-left: 26px;
 }
 
 .destinations {
@@ -196,39 +154,50 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: auto;
-    height: auto;
-    margin: 97px 0px 80px 0px;
-}
-
-.destination-pic {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 1440px;
-    overflow: hidden;
+    width: 360px;
+    height: 289px;
+    margin: 20px auto;
 }
 
 .popular {
-    display: flex;
-    justify-content: center;
-    width: 501px;
-    height: 53px;
+    width: 176px;
+    height: 19px;
     color: #F2785C;
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
-    font-size: 40px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 53px;
-    margin: 0px 0px 46px 0px; 
+    line-height: 19px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
 }
 
-.pictures {
-    width: 800px;
-    height: 800px;
+.scroll-back {
+    background-image: url(./assets/img/spain.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    height: 210px;
+    position: relative;
     border-radius: 16px;
-    margin: 0px 30px;
+    margin: 0px 15px;
+}
+
+.pic-name {
+    width: 60px;
+    height: 40px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 15px;
+    letter-spacing: 0.2px;
 }
 
 .scroll {
@@ -236,160 +205,204 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 20px;
-    margin: 24px 0px 40px 0px;
-    
+    width: 36px;
+    height: 8px;  
+    padding: 150px 162px 12px 162px; 
 }
 
 .dot-one {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    margin: 0px 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    margin-right: 6px;
     background-color: #F2785C;
 }
 
 .dot-two {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    margin-right: 6px;
+    background: rgba(242, 120, 92, 0.5);
+}
+
+.dot-three {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
     background: rgba(242, 120, 92, 0.5);
 }
 
 .find-more {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: row;
-    width: 228px;
-    height: 59px;
+    width: 92px;
+    height: 30px;
     background-color: #0D606F;
     border-radius: 10px;
-    color: #FFFFFF;
-    font-family: 'Red Hat Display', sans-serif;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 500;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    text-align: center;
     cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.find-more:hover {
+    background: rgb(5, 168, 160);
+	transition: all 0.5s linear;
 }
 
 .arrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    margin: 0px 10px 0px 0px;
+    width: 10px;
+    height: 10px;
+    margin: 10px 6px 10px 6px;
+}
+
+.find-more-text {
+    width: 52px;
+    height: 15px;
+    color: #FFFFFF;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 500;
+    text-align: center;
 }
 
 .stories {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
-    width: 1440px;
-    margin: 97px 0px 0px 0px;
+    width: 392px;
+    height: 657px;
     background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
 }
 
 .stories-text {
-    width: 335px;
-    height: 53px;
+    width: 118px;
+    height: 19px;
     color: #F2785C;
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 14px;
+    line-height: 19px;
     font-weight: 500;
-    margin: 0px 0px 80px 0px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 0.1px;
 }
 
 .stories-block {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 1200px;
-    height: 250px;
-    margin-bottom: 30px;
+    width: 360px;
+    height: 130px;
+    margin-top: 15px;
 }
 
 .stories-content {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .stories-photo {
-    width: 400px;
-    height: 250px;
+    width: 155px;
+    height: 130px;
     border-radius: 16px;
     filter: drop-shadow(0px 4px 4px #0D606F);
 }
 
 .stories-name {
-    width: 760px;
-    height: 42px;
+    width: 170px;
+    height: 13px;
     color: #0D606F;
     font-family: 'Aleo', serif;
     font-style: normal;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 42px;
-    margin-bottom: 24px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 13px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 5px;
 }
 
 .stories-exp {
-    width: 760px;
-    height: 184px;
+    width: 195px;
+    height: 102px;
     color: #0D606F;
     font-family: 'Aleo', serif;
     font-style: normal;
-    font-size: 20px;
+    font-size: 9px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 11px;
+    margin-top: 10px;
 }
 
 .see-more {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: row;
-    width: 228px;
-    height: 59px;
+    width: 92px;
+    height: 30px;
     background-color: #0D606F;
     border-radius: 10px;
-    color: #FFFFFF;
-    font-family: 'Red Hat Display', sans-serif;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 500;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    text-align: center;
-    margin-top: 10px;
     cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 13px;
 }
 
-.footer-text {
-    width: 260px;
-    height: 21px;
+.see-more:hover {
+    background: rgb(5, 168, 160);
+	transition: all 0.5s linear;
+}
+
+.see-more-text {
+    width: 52px;
+    height: 15px;
     color: #FFFFFF;
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
+    font-size: 11px;
+    line-height: 15px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    margin-right: 328px;
+    text-align: center;
+}
+
+.arrow2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    margin: 10px 6px 10px 6px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 65px;
 }
 
 .footer-social {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 141px;
     height: 34px;
+    margin-top: 6px;
+    margin-left: 10px;    
 }
 
 .social-block {
@@ -411,76 +424,37 @@ a {
     height: 34px;
 }
 
-.add-div {
-    height: 41px;
-}
-
-#PYT {
-    margin: 0px 42px;
-    
-}
-
-#TRS {
-    margin-left: 42px;
-}
-
-#preview1 {
-    position: relative;
-    width: 67%;
-    height: 422px;
-    color: #FFFFFF;
-    font-family: 'Aleo', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 96px;
-    top: 32px;
-    left: 120px;
-    margin: 0px;
-    text-shadow: 2px 1px 10px rgb(0 0 0 / 30%);
-}
-
-#preview2 {
-    position: relative;
-    width: 723px;
-    height: 24px;
-    color: #FFFFFF;
-    font-family: 'Aleo', serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 32px 0px 0px 0px;
-}
-
-#preview-search {
+.preview-search {
     display: flex;
     align-items: center;
-    width: 892px;
-    height: 95px;
+    width: 360px;
+    height: 48px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
-    margin: 47px 0px;
 }
 
-#search-text {
-    width: 560px;
-    height: 24px;
+.search-text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 16px;
+    width: 226px;
+    height: 30px;
     color: #F2785C;
     font-family: Aleo;
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 40px 0px 41px 41px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 1px;
 }
 
-#start-planning {
+.start-planning {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 228px;
-    height: 59px;
+    width: 92px;
+    height: 30px;
     background-color: #0D606F;
     border-radius: 10px;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -488,13 +462,16 @@ a {
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 11px;
+    line-height: 15px;
     text-align: center;
-    margin: 18px 18px 18px 75px;
     cursor: pointer;
-    transition: all 0.25;
+    transition: all;
+    border: none;
+    letter-spacing: 0.25px;
 }
 
-
-
+.start-planning:hover {
+    background: rgb(5, 168, 160);
+	transition: all 0.5s linear; 
+}
