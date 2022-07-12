@@ -250,8 +250,6 @@ a {
 .find-more:hover {
     background: rgb(5, 168, 160);
 	transition: all 0.5s linear;
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear; 
 }
 
 .arrow {
@@ -366,8 +364,6 @@ a {
 .see-more:hover {
     background: rgb(5, 168, 160);
 	transition: all 0.5s linear;
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear;
 }
 
 .see-more-text {
@@ -388,7 +384,7 @@ a {
     align-items: center;
     width: 10px;
     height: 10px;
-    margin: 10px 6px 10px 12px;
+    margin: 10px 6px 10px 6px;
 }
 
 .footer {
@@ -477,7 +473,5 @@ a {
 
 .start-planning:hover {
     background: rgb(5, 168, 160);
-	transition: all 0.5s linear;
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear; 
+	transition: all 0.5s linear; 
 }
