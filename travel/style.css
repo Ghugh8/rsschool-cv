@@ -1,12 +1,11 @@
 .html {
     scroll-behavior: smooth;
-    background: url(./assets/img/winter.jpg2) no-repeat bottom center;
+    background: url() no-repeat bottom center;
     background-size: 390px 693px;
     background-position: center bottom;    
 }
 
 .body {
-    
     background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(./assets/img/lake_2.jpg);
     max-width: 390px;
     min-width: 320px;
@@ -471,7 +470,7 @@ a {
     line-height: 15px;
     text-align: center;
     cursor: pointer;
-    transition: all 0.25;
+    transition: all;
     border: none;
     letter-spacing: 0.25px;
 }
