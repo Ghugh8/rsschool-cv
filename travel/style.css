@@ -3,7 +3,7 @@
     background: url() no-repeat bottom center;
     background-size: 100% 693px;
     background-position: center bottom;  
-    overflow-x: hidden;  
+    overflow-x: hidden;
 }
 
 .body {
@@ -49,7 +49,7 @@
 }
 
 .stories-footer {
-    background: url(./assets/img/winter.jpg) no-repeat bottom center;
+    background: url(./assets/img/winter_2.jpg) no-repeat bottom center;
     background-size: 100% 693px;
     background-position: center bottom; 
     border-radius: 30px;
@@ -479,3 +479,19 @@ a {
     background: rgb(5, 168, 160);
 	transition: all 0.5s linear; 
 }
+
+/*ИСКЛЮЧЕНИЕ*/
+
+.vector_desk,
+.login,
+.name,
+.navigation, 
+.preview1,
+.preview2,
+.steps_icons_desk,
+.destinations2,
+.stories_desk,
+.footer_desk {
+    display: none;
+}
+

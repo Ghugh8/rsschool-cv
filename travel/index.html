@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 390px)" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 391px)" href="style_desktop.css">
     <link rel="icon" href="assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +22,36 @@
             <img src="./assets/img/vector.svg" alt="vector" class="vector">
             <button class="menu-btn">
                 <img src="./assets/img/menu.svg" alt="menu" class="menu-img">
-            </button>    
+            </button> 
+        </div>     
+        <div>
+            <img src="./assets/img/Vector.png" alt="vector" class="vector_desk">
+            <h1 class="name">Travel Portal</h1>
         </div>
+        <div>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="section_item" id="HIW">
+                        <a href="#preview1">How It Works</a>
+                    </li>
+                    <li class="section_item" id="PYT">
+                        <a href="#three_steps">Plan Your Trip</a>
+                    </li>
+                    <li class="section_item" id="DEST">
+                        <a href="#destinations">Destinations</a>
+                    </li>
+                    <li class="section_item" id="TRS">
+                        <a href="#travel_stories">Travel Stories</a>
+                    </li>
+                </ul>    
+            </nav>
+        </div>
+        <button class="login">Login</button>
     </header>
+    <section class="preview_desk">
+        <div class="preview1" id="preview1">Explore the beauty of<br> the World</div>
+        <div class="preview2">Receive personalized recommendations for countries, hotels, activities and more</div>
+    </section>
     <section class="preview">
         <div class="preview-search">
             <h2 class="search-text">What would you like to do?</h2>
@@ -43,14 +71,36 @@
                 <img src="./assets/img/step_plane.svg" alt="plane">
             </div>
         </div>
+        <div class="steps_icons_desk">
+            <div class="bike">
+                <div class="block">
+                    <img width="100" src="./assets/img/step_bike.svg" alt="bike">
+                </div>
+                <div>Tell us what you want to do</div>
+            </div>
+            <div class="calendar">
+                <div class="block">
+                    <img width="100" src="./assets/img/step_calendar.svg" alt="calendar">
+                </div>
+                <div>Share us preferable dates</div>
+            </div>
+            <div class="plane">
+                <div class="block">
+                    <img width="100" src="./assets/img/step_plane.svg" alt="plane">
+                </div>
+                <div>We will give you recommendations</div>
+            </div>
+        </div>
+
         <div class="steps-text">
             <div class="steps-text1">Tell us what you want to do</div>
             <div class="steps-text2">Share us preferable dates</div>
             <div class="steps-text3">We will give you recommendations</div>
         </div>
     </section>
+
     <section class="destinations">
-        <h2 class="popular" id="destinations-link">POPULAR DESTINATIONS</h2>
+        <h2 class="popular" id="destinations_link">POPULAR DESTINATIONS</h2>
         <div class="scroll-back">
             <div class="pic-name">SPAIN</div>
             <div class="scroll">
@@ -66,6 +116,106 @@
             <span class="find-more-text">Find More</span>
         </button>
     </section>
+
+    <section class="destinations2">
+        <h2 class="popular" id="destinations">POPULAR DESTINATIONS</h2>
+        <div class="destination-pic">
+            <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
+            <img src="./assets/img/japan.jpg" alt="japan" class="pictures">
+            <img src="./assets/img/bridge.jpg" alt="bridge" class="pictures">
+        </div>
+        <div class="scroll">
+            <div class="dot-two"></div>
+            <div class="dot-one"></div>
+            <div class="dot-two"></div>
+        </div>
+        <button class="find-more">
+            <div class="arrow">
+                <img src="./assets/img/arrow.png" alt="arrow">
+            </div>
+            <div>Find More</div>
+        </button>
+    </section>
+
+    <section class="stories_desk">
+        <h2 class="stories-text" id="travel_stories">TRAVEL STORIES</h2>
+        <div class="stories-block">
+            <div>
+                <img src="./assets/img/thai.jpg" alt="thai" class="stories-photo">
+            </div>
+            <div class="stories-content">
+                <div class="stories-name">10 Photos of Attractive Thailand</div>
+                <div class="stories-exp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                     mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    <u><b>Read More</b></u>
+                </div>
+            </div>   
+        </div>
+        <div class="stories-block">
+            <div>
+                <img src="./assets/img/utah.jpg" alt="utah" class="stories-photo">
+            </div>
+            <div class="stories-content">
+                <div class="stories-name">Canyonlands National Park, Utah</div>
+                <div class="stories-exp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                     mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    <u><b>Read More</b></u>
+                </div>
+            </div>   
+        </div>
+        <div class="stories-block">
+            <div>
+                <img src="./assets/img/mountains.jpg" alt="mountains" class="stories-photo">
+            </div>
+            <div class="stories-content">
+                <div class="stories-name">I left my heart in the Mountains!</div>
+                <div class="stories-exp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                     mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    <u><b>Read More</b></u>
+                </div>
+            </div>                  
+        </div>
+        <div class="stories-block">
+            <div>
+                <img src="./assets/img/desert.jpg" alt="desert" class="stories-photo">
+            </div>
+            <div class="stories-content">
+                <div class="stories-name">The Longest journey in my life!</div>
+                <div class="stories-exp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                     mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    <u><b>Read More</b></u>
+                </div>
+            </div>
+        </div>
+        <div class="see-more">
+            <div class="arrow">
+                <img src="./assets/img/arrow.png" alt="arrow">
+            </div>
+            <div>See More</div>
+        </div>
+        <div class="add-div"></div>    
+    </section>
+
     <div class="stories-footer">
         <section class="stories">
             <h2 class="stories-text" id="travel-stories">TRAVEL STORIES</h2>
@@ -154,5 +304,19 @@
             </div>
         </footer>
     </div>
+    <footer class="footer_desk">
+        <div class="footer-text">All Rights Reserved © Travel Portal</div>
+        <div class="footer-social">
+            <div class="social-block">
+                <a href="https://rs.school/js-stage0/"><img src="./assets/img/icon_instagram.svg" alt="instagram"></a>
+            </div>
+            <div class="social-block">
+                <a href="https://www.youtube.com"><img src="./assets/img/icon_youtube.svg" alt="youtube"></a>
+            </div>
+            <div class="social-block-right">
+                <a href="https://github.com/Ghugh8"><img src="./assets/img/icon_twitter.svg" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
