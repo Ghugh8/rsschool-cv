@@ -459,6 +459,7 @@ a {
     top: 32px;
     left: 8.3%;
     text-shadow: 2px 1px 10px rgb(0 0 0 / 30%);
+    margin: 0;
 }
 
 .preview2 {
