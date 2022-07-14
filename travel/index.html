@@ -20,19 +20,23 @@
     <header class="header">
         <div class="container">
             <img src="./assets/img/vector.svg" alt="vector" class="vector">
-            <button class="menu-btn">
-                <img src="./assets/img/menu.svg" alt="menu" class="menu-img">
-            </button> 
+            <div class="menu_section">
+                <a href="#" class="menu-btn">
+                    <span class="span-btn"></span>
+                </a>
+            </div>
         </div>     
         <div>
             <img src="./assets/img/Vector.png" alt="vector" class="vector_desk">
             <h1 class="name">Travel Portal</h1>
         </div>
+
         <div>
             <nav class="navigation">
-                <ul class="navigation-list">
+                <div class="close-btn"></div>
+                <ul class="navigation_list">
                     <li class="section_item" id="HIW">
-                        <a href="#preview1">How It Works</a>
+                        <a href="#preview-search">How It Works</a>
                     </li>
                     <li class="section_item" id="PYT">
                         <a href="#three_steps">Plan Your Trip</a>
@@ -43,21 +47,49 @@
                     <li class="section_item" id="TRS">
                         <a href="#travel_stories">Travel Stories</a>
                     </li>
+                    <li class="section_item" id="ACC">
+                        <a href="#account">Account</a>
+                    </li>
+                    <li class="section_item" id="SM">
+                        <a href="#social_media">Social Media</a>
+                    </li>
+                </ul>  
+            </nav>
+        </div>
+
+        <div>
+            <nav class="navigation_desk">
+                <ul class="navigation-list">
+                    <li class="section_item" id="HIW">
+                        <a href="#preview1">How It Works</a>
+                    </li>
+                    <li class="section_item" id="PYT">
+                        <a href="#three_steps">Plan Your Trip</a>
+                    </li>
+                    <li class="section_item" id="DEST">
+                        <a href="#destinations_desk">Destinations</a>
+                    </li>
+                    <li class="section_item" id="TRS">
+                        <a href="#travel_stories_desk">Travel Stories</a>
+                    </li>
                 </ul>    
             </nav>
         </div>
+
         <button class="login">Login</button>
     </header>
+
     <section class="preview_desk">
         <h2 class="preview1" id="preview1">Explore the beauty of<br> the World</h2>
         <div class="preview2">Receive personalized recommendations for countries, hotels, activities and more</div>
     </section>
     <section class="preview">
-        <div class="preview-search">
+        <div class="preview-search" id="preview-search">
             <h2 class="search-text">What would you like to do?</h2>
             <button class="start-planning">Start Planning</button>
         </div>
     </section>
+
     <section class="steps">
         <h2 class="threesteps" id="three_steps">3 STEPS TO THE PERFECT TRIP</h2>
         <div class="steps_icons">
@@ -100,7 +132,7 @@
     </section>
 
     <section class="destinations">
-        <h2 class="popular" id="destinations_link">POPULAR DESTINATIONS</h2>
+        <h2 class="popular" id="destinations">POPULAR DESTINATIONS</h2>
         <div class="scroll-back">
             <div class="pic-name">SPAIN</div>
             <div class="scroll">
@@ -117,8 +149,8 @@
         </button>
     </section>
 
-    <section class="destinations2">
-        <h2 class="popular" id="destinations">POPULAR DESTINATIONS</h2>
+    <section class="destinations_desk">
+        <h2 class="popular" id="destinations_desk">POPULAR DESTINATIONS</h2>
         <div class="destination-pic">
             <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
             <img src="./assets/img/japan.jpg" alt="japan" class="pictures">
@@ -138,7 +170,7 @@
     </section>
 
     <section class="stories_desk">
-        <h2 class="stories-text" id="travel_stories">TRAVEL STORIES</h2>
+        <h2 class="stories-text" id="travel_stories_desk">TRAVEL STORIES</h2>
         <div class="stories-block">
             <div>
                 <img src="./assets/img/thai.jpg" alt="thai" class="stories-photo">
@@ -218,7 +250,7 @@
 
     <div class="stories-footer">
         <section class="stories">
-            <h2 class="stories-text" id="travel-stories">TRAVEL STORIES</h2>
+            <h2 class="stories-text" id="travel_stories">TRAVEL STORIES</h2>
             <div class="stories-block">
                 <div>
                     <img src="./assets/img/thai_2.jpg" alt="thai" class="stories-photo">
@@ -291,7 +323,7 @@
             </button> 
         </section>
         <footer class="footer">
-            <div class="footer-social">
+            <div class="footer-social" id="social_media">
                 <div class="social-block">
                     <a href="https://rs.school/js-stage0/"><img src="./assets/img/icon_instagram.svg" alt="instagram"></a>
                 </div>

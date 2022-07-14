@@ -1,1 +1,15 @@
-console.log("1.Вёрстка соответствует макету. Ширина экрана 390px +48\n2.Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +7\n3.На ширине экрана 390рх и меньше не реализовано адаптивное меню +0")
+window.onload=function() {
+  document.querySelector('.menu_section').addEventListener('click', () => {
+    document.querySelector('.navigation').classList.toggle('navigation_active');
+})
+
+  document.querySelector('.close-btn').addEventListener('click', () => {
+    document.querySelector('.navigation').classList.remove('navigation_active');
+})
+    document.querySelector('.section_item').addEventListener('click', () => {
+    document.querySelector('.navigation').classList.remove('navigation_active');
+})
+  document.querySelector('.navigation_list').addEventListener('click', () => {
+    document.querySelector('.navigation').classList.remove('navigation_active');
+})
+}
