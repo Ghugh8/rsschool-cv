@@ -477,6 +477,7 @@ a {
 }
 
 /*МЕНЮ-БУРГЕР*/
+
 .menu_section {
     position: relative;
     display: flex;
@@ -570,6 +571,7 @@ a {
 }
 
 /*POP-UP окно для входа*/
+
 .pop-up-desk {
     z-index: 10;
     display: flex;
@@ -593,10 +595,6 @@ a {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
     margin-top: 10%;
-}
-
-.hidden {
-    visibility: hidden;
 }
 
 .login-text {
@@ -826,27 +824,135 @@ a {
     margin-left: 5px;
 }
 
+/*POP-UP окно для регистрации*/
 
+.pop-up-create {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1475px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.22);
+    margin: 0 auto;
+}
 
+.pop-up-create-account {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 436px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-top: 10%;
+}
 
+.e-mail-section-create {
+    width: 86.15%;
+    height: 19px;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+    margin-top: 30px;
+}
 
+.sign-up-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86.15%;
+    height: 54px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    margin-top: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border: none;
+}
 
+.sign-up-btn:hover {
+    background: rgb(5, 168, 160);
+	transition: all 0.1s linear;
+}
 
+.already-have-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    margin-top: 20px;
+}
 
+.type-area-email-create {
+    width: 85.15%;
+    height: 54px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    margin-top: 5px;
+    text-align: center;
+    border: none;
+}
 
+.type-area-pass-create {
+    width: 85.15%;
+    height: 54px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    margin-top: 5px;
+    text-align: center;
+    border: none;
+}
 
+.register-text-create {
+    text-decoration: underline;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    margin-left: 10px;
+    margin-right: 0px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.hidden {
+    visibility: hidden;
+}
 
 /*ИСКЛЮЧЕНИЕ*/
 
@@ -859,7 +965,6 @@ a {
 .steps_icons_desk,
 .destinations_desk,
 .stories_desk,
-.footer_desk,
-.pop-up-create {
+.footer_desk {
     display: none;
 }
