@@ -16,7 +16,6 @@ window.onload=function() {
 const loginButton = document.querySelector('.login');
 const accountButton = document.querySelector('.account');
 const popup = document.querySelector('.pop-up-desk');
-const popupMob = document.querySelector('.pop-up');
 const bodyHidden = document.querySelector('.body');
 const signIn = document.querySelector('.sign-in-btn');
 let eMail = document.querySelector('.type-area-email');
@@ -35,15 +34,8 @@ popup.addEventListener('click', (event) => {
 })
 
 accountButton.addEventListener('click', () => {
-  popupMob.classList.toggle('hidden')
+  popup.classList.toggle('hidden')
   bodyHidden.classList.toggle('overflow')
-})
-
-popupMob.addEventListener('click', (event) => {
-  if (event.target.classList.contains('pop-up')) {
-      popupMob.classList.toggle('hidden')
-      bodyHidden.classList.toggle('overflow')
-  }
 })
 
 signIn.addEventListener('click', () => {
@@ -53,4 +45,17 @@ signIn.addEventListener('click', () => {
 signIn.addEventListener('click', () => {
   alert('Your Password: ' + pass.value)
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

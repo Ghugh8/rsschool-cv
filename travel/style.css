@@ -569,20 +569,8 @@ a {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*POP-UP окно для регистрации */
-.pop-up {
+/*POP-UP окно для входа*/
+.pop-up-desk {
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -843,6 +831,23 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*ИСКЛЮЧЕНИЕ*/
 
 .vector_desk,
@@ -855,6 +860,6 @@ a {
 .destinations_desk,
 .stories_desk,
 .footer_desk,
-.pop-up-desk {
+.pop-up-create {
     display: none;
 }
