@@ -727,7 +727,24 @@ a {
     margin-top: 20px;
 }
 
-.type-area {
+.type-area-email {
+    width: 85.15%;
+    height: 54px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    margin-top: 5px;
+    text-align: center;
+    border: none;
+}
+
+.type-area-pass {
     width: 85.15%;
     height: 54px;
     background-color: #FFFFFF;

@@ -18,6 +18,9 @@ const accountButton = document.querySelector('.account');
 const popup = document.querySelector('.pop-up-desk');
 const popupMob = document.querySelector('.pop-up');
 const bodyHidden = document.querySelector('.body');
+const signIn = document.querySelector('.sign-in-btn');
+let eMail = document.querySelector('.type-area-email');
+let pass = document.querySelector('.type-area-pass');
 
 loginButton.addEventListener('click', () => {
   popup.classList.toggle('hidden')
@@ -42,4 +45,12 @@ popupMob.addEventListener('click', (event) => {
       bodyHidden.classList.toggle('overflow')
   }
 })
+
+signIn.addEventListener('click', () => {
+  alert('Your E-mail: ' + eMail.value)
+});
+
+signIn.addEventListener('click', () => {
+  alert('Your Password: ' + pass.value)
+});
 }
