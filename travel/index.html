@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" media="screen and (max-width: 390px)" href="style.css">
     <link rel="stylesheet" media="screen and (min-width: 391px)" href="style_desktop.css">
     <link rel="icon" href="assets/favicon.ico">
@@ -16,7 +15,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body class="body">
+    <div class="pop-up-desk hidden">
+        <div class="pop-up-login">
+            <div class="login-text">Log in to your account</div>
+            <button class="login-facebook">
+                <img src="./assets/img/login_facebook.svg" alt="login_facebook" class="facebook-img">
+                Sign In with Facebook       
+            </button>
+            <button class="login-google">
+                <img src="./assets/img/login_google.svg" alt="login_google" class="google-img">
+                Sign In with Google             
+            </button>
+            <div class="login-devide">
+                <div class="login-devide-line"></div>
+                <p class="login-devide-text">or</p>
+                <div class="login-devide-line"></div>
+            </div>
+            <div class="e-mail-section">E-mail</div>
+            <input type="text" class="type-area-email">
+            <div class="password-section">Password</div>
+            <input type="text" class="type-area-pass">
+            <button class="sign-in-btn">Sign In</button>
+            <a href="#" class="forgot-pass">Forgot Your Password?</a>
+            <div class="devide-line"></div>
+            <div class="dont-have-account">
+                <div>Don’t have an account?</div> 
+                <a href="#" class="register-text">Register</a>
+            </div>
+        </div>  
+    </div>
+
+    <div class="pop-up-create hidden">
+        <div class="pop-up-create-account">
+            <div class="login-text">Create account</div>
+            <div class="e-mail-section-create">E-mail</div>
+            <input type="text" class="type-area-email-create">
+            <div class="password-section">Password</div>
+            <input type="text" class="type-area-pass-create">
+            <button class="sign-up-btn">Sign Up</button>
+            <div class="devide-line"></div>
+            <div class="already-have-account">
+                <div>Already have an account?</div> 
+                <a href="#" class="register-text-create">Log in</a>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <img src="./assets/img/vector.svg" alt="vector" class="vector">
@@ -25,7 +70,8 @@
                     <span class="span-btn"></span>
                 </a>
             </div>
-        </div>     
+        </div>   
+
         <div>
             <img src="./assets/img/Vector.png" alt="vector" class="vector_desk">
             <h1 class="name">Travel Portal</h1>
@@ -35,22 +81,22 @@
             <nav class="navigation">
                 <div class="close-btn"></div>
                 <ul class="navigation_list">
-                    <li class="section_item" id="HIW">
+                    <li class="section_item">
                         <a href="#preview-search">How It Works</a>
                     </li>
-                    <li class="section_item" id="PYT">
+                    <li class="section_item">
                         <a href="#three_steps">Plan Your Trip</a>
                     </li>
-                    <li class="section_item" id="DEST">
+                    <li class="section_item">
                         <a href="#destinations">Destinations</a>
                     </li>
-                    <li class="section_item" id="TRS">
+                    <li class="section_item">
                         <a href="#travel_stories">Travel Stories</a>
                     </li>
-                    <li class="section_item" id="ACC">
-                        <a href="#account">Account</a>
+                    <li class="section_item">
+                        <a href="#account" class="account">Account</a>
                     </li>
-                    <li class="section_item" id="SM">
+                    <li class="section_item">
                         <a href="#social_media">Social Media</a>
                     </li>
                 </ul>  
@@ -83,6 +129,7 @@
         <h2 class="preview1" id="preview1">Explore the beauty of<br> the World</h2>
         <div class="preview2">Receive personalized recommendations for countries, hotels, activities and more</div>
     </section>
+
     <section class="preview">
         <div class="preview-search" id="preview-search">
             <h2 class="search-text">What would you like to do?</h2>
@@ -123,7 +170,6 @@
                 <div>We will give you recommendations</div>
             </div>
         </div>
-
         <div class="steps-text">
             <div class="steps-text1">Tell us what you want to do</div>
             <div class="steps-text2">Share us preferable dates</div>
@@ -151,11 +197,31 @@
 
     <section class="destinations_desk">
         <h2 class="popular" id="destinations_desk">POPULAR DESTINATIONS</h2>
-        <div class="destination-pic">
-            <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
-            <img src="./assets/img/japan.jpg" alt="japan" class="pictures">
-            <img src="./assets/img/bridge.jpg" alt="bridge" class="pictures">
+        <div class="pic-to-right"></div>
+        <div class="pic-to-left"></div>
+        <div class="destination-pic-slider">
+            <div class="destination-pictures">
+                <div class="pic-name">USA</div>
+                <img src="./assets/img/bridge.jpg" alt="bridge" class="pictures">
+            </div>
+            <div class="destination-pictures">
+                <div class="pic-name">SPAIN</div>
+                <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
+            </div> 
+            <div class="destination-pictures">
+                <div class="pic-name">JAPAN</div>
+                <img src="./assets/img/japan.jpg" alt="japan" class="pictures">
+            </div>
+            <div class="destination-pictures">
+                <div class="pic-name">USA</div>
+                <img src="./assets/img/bridge.jpg" alt="bridge" class="pictures">
+            </div>
+            <div class="destination-pictures">
+                <div class="pic-name">SPAIN</div>
+                <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
+            </div>            
         </div>
+
         <div class="scroll">
             <div class="dot-two"></div>
             <div class="dot-one"></div>
@@ -243,7 +309,7 @@
             <div class="arrow">
                 <img src="./assets/img/arrow.png" alt="arrow">
             </div>
-            <div>See More</div>
+            <div >See More</div>
         </div>
         <div class="add-div"></div>    
     </section>
@@ -322,13 +388,14 @@
                 <span class="see-more-text">See More</span>
             </button> 
         </section>
+        
         <footer class="footer">
             <div class="footer-social" id="social_media">
                 <div class="social-block">
                     <a href="https://rs.school/js-stage0/"><img src="./assets/img/icon_instagram.svg" alt="instagram"></a>
                 </div>
                 <div class="social-block">
-                    <a href="https://www.youtube.com"><img src="./assets/img/icon_youtube.svg" alt="youtube"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./assets/img/icon_youtube.svg" alt="youtube"></a>
                 </div>
                 <div class="social-block-right">
                     <a href="https://github.com/Ghugh8"><img src="./assets/img/icon_twitter.svg" alt="twitter"></a>
@@ -344,17 +411,14 @@
                 <a href="https://rs.school/js-stage0/"><img src="./assets/img/icon_instagram.svg" alt="instagram"></a>
             </div>
             <div class="social-block">
-                <a href="https://www.youtube.com"><img src="./assets/img/icon_youtube.svg" alt="youtube"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./assets/img/icon_youtube.svg" alt="youtube"></a>
             </div>
             <div class="social-block-right">
                 <a href="https://github.com/Ghugh8"><img src="./assets/img/icon_twitter.svg" alt="twitter"></a>
             </div>
         </div>
-    </footer>
-
-    <div class="login-popup">
-        <div class="login"></div>
-        
-    </div>
+    </footer> 
+    <script src="index.js"></script>  
 </body>
+
 </html>
