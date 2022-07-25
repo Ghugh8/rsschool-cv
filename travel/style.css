@@ -16,6 +16,10 @@
     border-radius: 30px 30px 0px 0px;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 .header {
     width: 100%;
     height: 32px;
@@ -24,12 +28,6 @@
 .vector {
     width: 30px;
     height: 30px;
-}
-
-.menu-btn {
-    border: none;
-    background: transparent;
-    cursor: pointer;
 }
 
 .menu-img {
@@ -114,8 +112,6 @@ a {
     font-weight: 400;
     line-height: 12px;
 }
-
-
 
 .steps-text {
     display: flex;
@@ -480,18 +476,495 @@ a {
 	transition: all 0.5s linear; 
 }
 
+/*МЕНЮ-БУРГЕР*/
+
+.menu_section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 0 5px 0 0;
+}
+
+.menu-btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%; 
+    margin-top: -1.25px;
+    left: 50%;
+    margin-left: -13px;
+    width: 26px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #FFFFFF;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+}
+
+.menu-btn span::before {
+    transform: translateY(-7px);
+}
+
+.menu-btn span::after {
+    transform: translateY(7px);
+}
+
+.navigation {
+    position: fixed;
+    z-index: 10;
+    width: 165px;
+    height: 250px;
+    background-color: #F2785C;
+    border-radius: 10px;
+    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    top: 0;
+    right: 0px;
+    transform: translateX(100%);
+    transition: 0.3s all linear;
+}
+
+.navigation_active {
+    transform: translateX(0);
+    transition: 0.3s all linear;
+}
+
+.navigation_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 106px;
+    height: 176px;
+    padding: 6px 15px 30px 44px;
+    margin: 0;
+    list-style: none;
+}
+
+.section_item {
+    text-align: end;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/img/close_btn.svg);
+    margin: 8px 0px 0px 8px;
+    cursor: pointer;
+}
+
+/*POP-UP окно для входа*/
+
+.pop-up-desk {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1475px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.4);
+    margin: 0 auto;
+}
+
+.pop-up-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 660px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-top: 10%;
+}
+
+.login-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 38px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 25px;
+    color: #0D606F;
+}
+
+.login-facebook {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86.15%;
+    height: 56px;
+    margin-top: 30px;
+    background-color: #1877F2;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+}
+
+.facebook-img {
+    margin-right: 15px;
+}
+
+.login-google {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86.15%;
+    height: 56px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+}
+
+.google-img {
+    margin-right: 15px;
+}
+
+.login-devide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86.15%;
+    height: 24px;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+    margin-top: 30px;
+}
+
+.login-devide-text {
+    width: 20px;
+    height: 24px;
+    margin: 0 9px 0 9px;
+}
+
+.login-devide-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 261px;
+    height: 1px;
+    background-color: rgba(13, 96, 111, 0.5);
+}
+
+.e-mail-section {
+    width: 86.15%;
+    height: 19px;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+    margin-top: 10px;
+}
+
+.password-section {
+    width: 86.15%;
+    height: 19px;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+    margin-top: 20px;
+}
+
+.type-area-email {
+    width: 85.15%;
+    height: 54px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    margin-top: 5px;
+    text-align: center;
+    border: none;
+}
+
+.type-area-pass {
+    width: 85.15%;
+    height: 54px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    margin-top: 5px;
+    text-align: center;
+    border: none;
+}
+
+.sign-in-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86.15%;
+    height: 54px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    margin-top: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.sign-in-btn:hover {
+    background: rgb(5, 168, 160);
+	transition: all 0.1s linear;
+}
+
+.forgot-pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18px;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #0D606F;
+    margin-top: 10px;
+}
+
+.devide-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86.15%;
+    height: 1px;
+    background-color: #0D606F80;
+    margin-top: 26px;
+}
+
+.dont-have-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    margin-top: 20px;
+}
+
+.register-text {
+    text-decoration: underline;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    margin-left: 5px;
+}
+
+/*POP-UP окно для регистрации*/
+
+.pop-up-create {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1475px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.22);
+    margin: 0 auto;
+}
+
+.pop-up-create-account {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 436px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-top: 10%;
+}
+
+.e-mail-section-create {
+    width: 86.15%;
+    height: 19px;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+    margin-top: 30px;
+}
+
+.sign-up-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86.15%;
+    height: 54px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    margin-top: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.sign-up-btn:hover {
+    background: rgb(5, 168, 160);
+	transition: all 0.1s linear;
+}
+
+.already-have-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    margin-top: 20px;
+}
+
+.type-area-email-create {
+    width: 85.15%;
+    height: 54px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    margin-top: 5px;
+    text-align: center;
+    border: none;
+}
+
+.type-area-pass-create {
+    width: 85.15%;
+    height: 54px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    margin-top: 5px;
+    text-align: center;
+    border: none;
+}
+
+.register-text-create {
+    text-decoration: underline;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
 /*ИСКЛЮЧЕНИЕ*/
 
 .vector_desk,
 .login,
 .name,
-.navigation, 
+.navigation_desk, 
 .preview1,
 .preview2,
 .steps_icons_desk,
-.destinations2,
+.destinations_desk,
 .stories_desk,
 .footer_desk {
     display: none;
 }
-
