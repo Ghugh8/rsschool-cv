@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" media="screen and (max-width: 390px)" href="style.css">
     <link rel="stylesheet" media="screen and (min-width: 391px)" href="style_desktop.css">
     <link rel="icon" href="assets/favicon.ico">
@@ -16,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="body">
 
+<body class="body">
     <div class="pop-up-desk hidden">
         <div class="pop-up-login">
             <div class="login-text">Log in to your account</div>
@@ -45,8 +44,7 @@
                 <div>Don’t have an account?</div> 
                 <a href="#" class="register-text">Register</a>
             </div>
-        </div>
-        
+        </div>  
     </div>
 
     <div class="pop-up-create hidden">
@@ -65,7 +63,6 @@
         </div>
     </div>
     <header class="header">
-
         <div class="container">
             <img src="./assets/img/vector.svg" alt="vector" class="vector">
             <div class="menu_section">
@@ -173,7 +170,6 @@
                 <div>We will give you recommendations</div>
             </div>
         </div>
-
         <div class="steps-text">
             <div class="steps-text1">Tell us what you want to do</div>
             <div class="steps-text2">Share us preferable dates</div>
@@ -201,11 +197,31 @@
 
     <section class="destinations_desk">
         <h2 class="popular" id="destinations_desk">POPULAR DESTINATIONS</h2>
-        <div class="destination-pic">
-            <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
-            <img src="./assets/img/japan.jpg" alt="japan" class="pictures">
-            <img src="./assets/img/bridge.jpg" alt="bridge" class="pictures">
+        <div class="pic-to-right"></div>
+        <div class="pic-to-left"></div>
+        <div class="destination-pic-slider">
+            <div class="destination-pictures">
+                <div class="pic-name">USA</div>
+                <img src="./assets/img/bridge.jpg" alt="bridge" class="pictures">
+            </div>
+            <div class="destination-pictures">
+                <div class="pic-name">SPAIN</div>
+                <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
+            </div> 
+            <div class="destination-pictures">
+                <div class="pic-name">JAPAN</div>
+                <img src="./assets/img/japan.jpg" alt="japan" class="pictures">
+            </div>
+            <div class="destination-pictures">
+                <div class="pic-name">USA</div>
+                <img src="./assets/img/bridge.jpg" alt="bridge" class="pictures">
+            </div>
+            <div class="destination-pictures">
+                <div class="pic-name">SPAIN</div>
+                <img src="./assets/img/sea.jpg" alt="sea" class="pictures">
+            </div>            
         </div>
+
         <div class="scroll">
             <div class="dot-two"></div>
             <div class="dot-one"></div>
@@ -293,7 +309,7 @@
             <div class="arrow">
                 <img src="./assets/img/arrow.png" alt="arrow">
             </div>
-            <div>See More</div>
+            <div >See More</div>
         </div>
         <div class="add-div"></div>    
     </section>
@@ -401,7 +417,8 @@
                 <a href="https://github.com/Ghugh8"><img src="./assets/img/icon_twitter.svg" alt="twitter"></a>
             </div>
         </div>
-    </footer>   
+    </footer> 
+    <script src="index.js"></script>  
 </body>
 
 </html>

@@ -78,4 +78,35 @@ signUp.addEventListener('click', () => {
 signUp.addEventListener('click', () => {
   alert('Your Password: ' + passCreate.value)
 });
+
+
+
+
+let offset = 0;
+const picturesSlider = document.querySelector('.destination-pic-slider');
+
+document.querySelector('.pic-to-left').addEventListener('click', function() {
+  offset = offset + 860;
+  if (offset > 1440) {
+    offset = 0;
+  }
+  picturesSlider.style.left = -offset + 'px';
+})
+
+document.querySelector('.pic-to-right').addEventListener('click', function() {
+  offset = offset + 860;
+  if (offset > 1440) {
+    offset = 0;
+  }
+  picturesSlider.style.left = offset + 'px';
+})
+
+
+
+
+
+
+
+
+
 }
