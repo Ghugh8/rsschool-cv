@@ -113,6 +113,7 @@ a {
 .login:hover {
     background: rgb(5, 168, 160);
 	transition: all 0.5s linear;
+    transform: scale(1.025);
 	-webkit-transition: all 0.5s linear;
 	-moz-transition: all 0.5s linear; 
 }
@@ -282,6 +283,7 @@ a {
 .find-more:hover {
     background: rgb(5, 168, 160);
 	transition: all 0.5s linear;
+    transform: scale(1.025);
 	-webkit-transition: all 0.5s linear;
 	-moz-transition: all 0.5s linear; 
 }
@@ -391,6 +393,7 @@ a {
 .see-more:hover {
     background: rgb(5, 168, 160);
 	transition: all 0.5s linear;
+    transform: scale(1.025);
 	-webkit-transition: all 0.5s linear;
 	-moz-transition: all 0.5s linear;
 }
@@ -434,6 +437,14 @@ a {
     align-items: center;
     width: 34px;
     height: 34px;
+}
+
+.social-block:hover {
+    transform: scale(1.05);
+}
+
+.social-block-right:hover {
+    transform: scale(1.05);
 }
 
 .add-div {
@@ -526,6 +537,7 @@ a {
 .start-planning:hover {
     background: rgb(5, 168, 160);
 	transition: all 0.5s linear;
+    transform: scale(1.025);
 	-webkit-transition: all 0.5s linear;
 	-moz-transition: all 0.5s linear; 
 }
